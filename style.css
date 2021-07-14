@@ -1,0 +1,352 @@
+
+/* Imported Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ====================
+        Common Styles Start
+===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-display {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary-btn {
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #fff;
+    border: 1px solid #E02C6D;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.primary-btn i {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.common-para-style {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+/* ------------------------------------------
+        Common Styles END 
+--------------------------------------------*/
+
+
+/* ========================
+    Styling Header Section  Start
+=========================*/
+
+header {
+    height: 670px;
+    width: 100%;
+    background-color: #2d25a0;
+}
+
+/* Styling NavBar */
+
+nav {
+    height: 44px;
+    width: 100%;
+    padding-top: 58px;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 36px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color: #fff;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+/* Styling Home */
+
+#home-section {
+    margin-top: 100px;
+}
+
+#home-contents h1 {
+    font-size: 60px;
+    line-height: 80px;
+    color: #fff;
+}
+
+#home-image img {
+    width: 100%;
+    margin-right: -7px;
+}
+
+#home-contents .primary-btn {
+    margin-top: 24px;
+}
+
+#home-contents .primary-btn:hover i {
+    transform: translate(10px, 0);
+    padding-right: 3px;
+    transition: .4s ease;
+}
+
+/* ------------------------------------------
+    Styling Header Section  END
+--------------------------------------------*/
+
+
+/* ========================
+    Styling Player Section  Start
+=========================*/
+
+#players {
+    margin-top: 75px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 27px;
+    justify-content: space-between;
+}
+
+.grid-container .grid-item {
+    padding: 15px;
+    box-shadow: 0 0 40px 0px #00000026;
+    
+}
+.grid-container .grid-item img {
+    width: 100%;
+}
+.grid-container .grid-item h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+/* ------------------------------------------
+    Styling Player Section  END
+--------------------------------------------*/
+
+
+/* ========================
+        Gallery Section  Start
+=========================*/
+
+#gallery {
+    margin-top: 160px;
+}
+
+#gallery .container-fluid > h2 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #ccc;
+}
+
+.container-fluid {
+    width: 96%;
+    margin: auto;
+}
+
+#gallery-images {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 10px 16px;
+    justify-content: center;
+}
+
+.gallery-img-item {
+    height: 100%;
+}
+
+.gallery-img-item img {
+    width: 100%;
+}
+
+/* ------------------------------------------
+        Gallery Section  END
+--------------------------------------------*/
+
+
+
+/* ========================
+        Highlights Section  Start
+=========================*/
+
+#highlights {
+    margin-top: 165px;
+}
+
+.highlights-contents h2 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.highlights-contents {
+    width: 45%;
+}
+
+.highlights-contents p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 90%;
+}
+
+.highlights-img {
+    width: 50%;
+}
+
+.highlights-img img {
+    width: 100%;
+}
+
+.highlights-contents .primary-btn {
+    margin-top: 27px;
+}
+
+.highlights-contents .primary-btn:hover i {
+    transform: translate(10px, 0);
+    padding-right: 3px;
+    transition: .4s ease;
+}
+
+/* ------------------------------------------
+        Highlights Section  END
+--------------------------------------------*/
+
+
+/* ========================
+        Sponsors Section  Start
+=========================*/
+
+#sponsors {
+    margin-top: 160px;
+    background: #ccc;
+    padding: 40px;
+}
+
+#sponsors-grid {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap: 10px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sponsors .container h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.sponsor-item img {
+    width: 200px;
+}
+
+/* ------------------------------------------
+        Sponsors Section  END
+--------------------------------------------*/
+
+
+/* ========================
+            Footer Section  Start
+=========================*/
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 63px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column > div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#footer-logo {
+    width: 50%;
+}
+
+#footer-logo img {
+    width: 100%;
+}
+
+.icon-rounded-bg {
+    height: 32px;
+    width: 32px;
+    background: rgb(11, 13, 23, 0.1);
+    margin: auto 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon-rounded-bg i {
+    color: #969BAB;
+    font-size: 17px;
+}
+
+.copyrights {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* ------------------------------------------
+            Footer Section  END
+--------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
